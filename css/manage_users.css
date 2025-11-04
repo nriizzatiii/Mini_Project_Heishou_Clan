@@ -1,0 +1,318 @@
+    .manage-page {
+      padding: 6rem 0 2rem;
+      min-height: 100vh;
+      background: var(--gray-900);
+    }
+    
+    .page-header {
+      margin-bottom: 2rem;
+    }
+    
+    .page-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    
+    .page-subtitle {
+      color: var(--gray-400);
+    }
+    
+    .filters-section {
+      background: var(--gray-800);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid var(--gray-700);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    .search-box {
+      flex: 1;
+      min-width: 250px;
+      position: relative;
+    }
+    
+    .search-box input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      background: var(--gray-700);
+      border: 1px solid var(--gray-600);
+      border-radius: 0.5rem;
+      color: var(--white);
+      font-size: 0.875rem;
+    }
+    
+    .search-box i {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gray-400);
+    }
+    
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    
+    .filter-tab {
+      padding: 0.5rem 1rem;
+      background: var(--gray-700);
+      border: 1px solid var(--gray-600);
+      border-radius: 0.5rem;
+      color: var(--gray-300);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .filter-tab:hover {
+      background: var(--gray-600);
+      color: var(--white);
+    }
+    
+    .filter-tab.active {
+      background: var(--red);
+      color: var(--white);
+      border-color: var(--red);
+    }
+    
+    .filter-count {
+      display: inline-block;
+      margin-left: 0.5rem;
+      padding: 0.125rem 0.375rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      min-width: 1.25rem;
+      text-align: center;
+    }
+    
+    .users-table-container {
+      background: var(--gray-800);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid var(--gray-700);
+      overflow-x: auto;
+    }
+    
+    .users-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .users-table th {
+      text-align: left;
+      padding: 0.75rem;
+      color: var(--gray-400);
+      font-weight: 500;
+      font-size: 0.875rem;
+      border-bottom: 2px solid var(--gray-700);
+    }
+    
+    .users-table td {
+      padding: 0.75rem;
+      color: var(--gray-300);
+      border-bottom: 1px solid var(--gray-700);
+    }
+    
+    .users-table tr:hover {
+      background: var(--gray-700);
+    }
+    
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--gray-600);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 600;
+    }
+    
+    .user-details {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .user-name {
+      font-weight: 500;
+      color: var(--white);
+    }
+    
+    .user-email {
+      font-size: 0.875rem;
+      color: var(--gray-400);
+    }
+    
+    .role-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    
+    .role-admin {
+      background: rgba(220, 38, 38, 0.2);
+      color: var(--red);
+    }
+    
+    .role-user {
+      background: rgba(59, 130, 246, 0.2);
+      color: #3b82f6;
+    }
+    
+    .actions-cell {
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .action-btn {
+      padding: 0.375rem 0.75rem;
+      border: none;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .role-select {
+      padding: 0.375rem 0.75rem;
+      background: var(--gray-700);
+      border: 1px solid var(--gray-600);
+      border-radius: 0.375rem;
+      color: var(--white);
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    
+    .delete-btn {
+      background: rgba(239, 68, 68, 0.2);
+      color: #ef4444;
+    }
+    
+    .delete-btn:hover {
+      background: rgba(239, 68, 68, 0.3);
+    }
+    
+    .current-user {
+      color: var(--red);
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      color: var(--gray-400);
+    }
+    
+    .empty-state i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--gray-500);
+    }
+    
+    .alert {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .alert-success {
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #10b981;
+    }
+    
+    .alert-error {
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #ef4444;
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+    }
+    
+    .modal.show {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .modal-content {
+      background: var(--gray-900);
+      border: 1px solid var(--gray-700);
+      border-radius: 0.75rem;
+      width: 90%;
+      max-width: 500px;
+      padding: 2rem;
+    }
+    
+    .modal-header {
+      margin-bottom: 1.5rem;
+    }
+    
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+    
+    .modal-body {
+      margin-bottom: 1.5rem;
+      color: var(--gray-300);
+    }
+    
+    .modal-footer {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+    }
+    
+    @media (max-width: 768px) {
+      .filters-section {
+        flex-direction: column;
+      }
+      
+      .search-box {
+        width: 100%;
+      }
+      
+      .users-table {
+        font-size: 0.875rem;
+      }
+      
+      .actions-cell {
+        flex-direction: column;
+      }
+    }
